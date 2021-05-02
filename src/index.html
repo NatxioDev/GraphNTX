@@ -7,85 +7,80 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <title>Graph {NTX}</title>
   </head>
-  <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <a href="navbar navbar-brand m-2" href="#">
-        <img
-          class="m-3"
-          src="./images/GraphNTX_logo_flat.png"
-          width="300"
-          alt="Logo de GraphNTX"
-        />
-      </a>
-      <div class="d-flex">
-        <button class="btn btn-primary">Iniciar Sesion</button>
-        <button class="btn btn-danger mx-3">Cerrar Sesion</button>
+  <body id="cuerpo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#/"
+          ><img
+            class="m-3"
+            src="./images/GraphNTX_logo_flat.png"
+            width="300"
+            alt="Logo de GraphNTX"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="btn btn-primary" href="#/">Grafos</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary" href="#/jhonson">Jhonson</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex">
+          <button class="btn btn-primary">Iniciar Sesion</button>
+          <button class="btn btn-danger mx-3">Cerrar Sesion</button>
+        </div>
       </div>
     </nav>
 
-    <center class="m-5">
-      <div class="card" style="width: 50rem">
-        <div class="card-header bg-dark">
-          <h1 class="card-title text-primary">Iniciar Sesion</h1>
+    <div>
+      <div class="row m-3">
+        <!-- CANVAS -->
+        <div class="col m-2">
+          <div id="mynetwork"></div>
         </div>
-
-        <div class="card-body">
-          <h6 class="card-subtitle mb-2 text-muted">
-            Para acceder a la aplicacion es necesaria su autentificacion
-          </h6>
-
-          <div class="input-group px-5 mt-5">
-            <span class="input-group-text" id="basic-addon1">
-              <i class="fas fa-envelope"></i>
-            </span>
-            <input
-              id="inputEmail"
-              type="email"
-              class="form-control"
-              placeholder="Direccion de correo electronico"
-            />
-          </div>
-          <div class="input-group px-5 mt-3">
-            <span class="input-group-text" id="basic-addon1">
-              <i class="fas fa-key"></i>
-            </span>
-            <input
-              id="inputPass"
-              type="password"
-              class="form-control"
-              placeholder="Contraseña"
-            />
-          </div>
-          <div class="d-grid">
-            <button
-              class="btn btn-primary mx-5 mt-3"
-              type="button"
-              id="btnIniciarSesion"
-            >
-              Iniciar Sesion
-            </button>
-            <div class="mx-5 mt-3 row">
-              <hr class="col" />
-              <hr class="col" />
+        <!-- FORM -->
+        <div class="col">
+          <!-- CREAR NODO -->
+          <div class="col m-2">
+            <div class="d-grid">
+              <button class="btn btn-primary my-4" id="btnNuevoNodo">
+                <strong>Crear nodo</strong>
+              </button>
+              <button class="btn btn-primary" id="btnReiniciar">
+                <strong> Borrar todo </strong>
+              </button>
+              <button class="btn btn-primary mt-4" id="btnDescargar">
+                <strong> Descargar</strong>
+              </button>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <btn
-                class="btn btn-primary mt-3"
-                href="https://www.instagram.com/ignaciopz"
-                role="button"
-                id="btnIniciarGoogle"
-              >
-                <i class="fab fa-google"></i>
-              </btn>
+          <!-- GENERAR MATRIZ -->
+          <div class="col m-2">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary mt-5" id="btnGenerarMatriz">
+                <strong> Generar Matriz </strong>
+              </button>
+
+              <table class="table table-dark" id="finalTable"></table>
             </div>
           </div>
         </div>
       </div>
-    </center>
-
-    <footer class="bg-dark text-center text-white fixed-bottom">
+    </div>
+    <!-- <footer class="bg-dark text-center text-white fixed-bottom">
       <div class="container p-4">
         <section class="mb-1">
           <a
@@ -126,6 +121,6 @@
           </div>
         </section>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

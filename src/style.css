@@ -1,0 +1,28 @@
+#mynetwork {
+  border: 3px solid #eeda7c;
+  border-radius: 0px;
+  background-color: #333333;
+}
+#cuerpo {
+  /* background-image: linear-gradient(#7952B3, #333333); */
+  background-color: #212529;
+}
+#matriz {
+  color: #eeda7c;
+  font-weight: bold;
+}
+
+.btn {
+  color: #eeda7c;
+  outline-color: #eeda7c;
+  border-color: #eeda7c;
+}
+
+.btn:hover {
+  color: #333333;
+  background-color: #eeda7c;
+  outline-color: #eeda7c;
+  border-color: #eeda7c;
+}
+
+/* SWAL */
